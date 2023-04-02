@@ -1,0 +1,910 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@media screen and (min-width:1330px){
+ /*------------------下面是轮播图-----------------*/
+            /* .da{
+                width: 100%;
+                height: 100vh;
+                z-index: 1000;
+                background-color: red;
+                position: fixed;
+                top: 0px;
+            } */
+            #lunbotubuju{
+                width: 100%;
+                height: 100vh;
+                /* background-color: red; */
+            }
+            #lunbotubuju img{
+                width: 100%;
+                height: 100%;
+            }
+    /*------------------下面是头部-----------------*/
+    header{
+        width: 100%;
+        height: 80px;
+        /* background-color: rgba(5, 5, 5, 0.246); */
+        z-index: 999;
+        display: flex;
+        position: fixed;
+        top: 0px;
+    }
+    /* -------------下面是logo---------- */
+    .logo{
+        width: 15%;
+        height: 80px;
+        margin-left: 5%;
+        /* background-color: red; */
+        background-image: url("../images/xing/logozhi.png");
+        background-repeat: no-repeat;
+        background-size: 90% 60%;
+        background-position: 80%;
+    }
+    header:hover{
+        /* background-color: red; */
+    }
+    /* -------------下面是logo字---------- */
+    .logozhi{
+        display: none;
+        width: 100%;
+        height: 100vh;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+    }
+  .logo-zhixiao{
+    display: none;
+    width: 40%;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0.326);
+    border-radius: 20px;
+    margin-top: 5%;
+  }
+    /* -------------下面是搜索框---------- */
+    .ssl{
+        width: 30%;
+        height: 80px;
+        /* background-color:white; */
+        margin-left:15%;
+        display: flex;
+    }
+    /* -------------下面是导航栏---------- */
+    nav{
+        width: 35%;
+        height: 80px;
+        /* background-color:blueviolet; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 42%;
+    }
+    nav a{
+        width: 30%;
+        margin-left: 3%;
+        height: 40px;
+        float: left;
+        text-decoration: none;
+        line-height: 40px;
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        /* background-color: blue; */
+        border-radius: 20px;
+        border: 0px;
+        /* font-family:"Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"; */
+    }
+    nav a:hover{
+        background-color: #1da1f2;
+    }
+
+/* -------------下面是da-2---------- */
+.da-2{
+width: 100%;
+height: 100vh;
+background-color: black;
+/* background-image: url("../images/ssy/beijing.jpg"); */
+}
+.da-2-burl{
+width: 100%;
+height: 100vh;
+/* background: rgba(255, 255, 255, 0.322); */
+backdrop-filter: blur(3px);
+}
+.da-2-xw1{
+width: 100%;
+height: 12vh;
+background: #212222;
+display: flex;
+/* align-items: center; */
+justify-content: center;
+box-shadow: 1px 1px 5px 2px   #343636;
+}
+.da-2-xw1 a{
+width: 8%;
+height: 12vh;
+line-height: 12vh;
+text-decoration: none;
+text-align: center;
+margin-left: 2%;
+color: #676969;
+}
+.da-2-xw1 a:hover{
+color: #a0a2a2;
+border-bottom: 3px #1da1f2 solid;
+}
+/* -------------下面是da3---------- */
+
+.da-2-xw2{
+width: 100%;
+height: 88vh;
+background: #272929;
+display: flex;
+}
+
+.da-2-xw2 >div:nth-child(1){
+width: 35%;
+height: 100%;
+
+/* background-color: red;; */
+}
+.da-2-xw2 >div:nth-child(2){
+width: 65%;
+height: 100%;
+/* background-color: rgb(2, 53, 255);; */
+}
+
+/* -------------下面是左边的介绍小吴---------- */
+.da-2-zhuo{
+width: 60%;
+height: 80%;
+background-color: #414444;
+/*box-shadow: 1px 1px     5px 2px   #343636;*/
+/* border: 1px #565657 solid; */
+/* border-radius: 1%; */
+position: relative;
+left: 30%;
+top: 8%;
+}
+/* ------------第一个--------- */
+.da-2-zhuo >div:nth-child(1){
+width: 100%;
+height: 49px;
+line-height: 50px;
+border-bottom: 1px  #565657 solid;
+}
+.da-2-zhuo >div:nth-child(1) a{
+text-decoration: none;
+float: left;
+width: 30%;
+color: #676969;
+text-align: center;
+height: 100%;
+}
+.da-2-zhuo >div:nth-child(1) a:hover{
+color:#a0a2a2;
+}
+/* ------------第二个--------- */
+.da-2-zhuo >div:nth-child(2){
+width: 100%;
+height: 35%;
+/*border-bottom: 1px #565657 solid;*/
+background-image: url("../images/logo.png");
+background-size: 60% 100%;
+background-repeat: no-repeat;
+background-position: 50%;
+}
+
+/* ------------第三个--------- */
+.da-2-zhuo >div:nth-child(3){
+margin-left: 10%;
+width: 80%;
+text-align: center;
+color: #a0a2a2; 
+}
+/* .da-2-zhuo >div:nth-child(3):hover{
+    color:#1da1f2;
+} */
+/* -------------下面是右边的---------- */
+.da-2-you{
+width: 85%;
+height: 100%;
+background-color: #414444;
+/*box-shadow: 1px 1px 5px 2px   #343636;*/
+position: relative;
+/* left: 30%; */
+top: 8%;
+}
+/* ------------第一个--------- */
+.da-2-you >div:nth-child(1){
+width: 100%;
+height: 49px;
+line-height: 50px;
+border-bottom: 1px  #565657 solid;
+}
+.da-2-you >div:nth-child(1) a{
+text-decoration: none;
+float: left;
+width: 13%;
+color: #676969;
+text-align: center;
+height: 100%;
+}
+.da-2-you >div:nth-child(1) a:hover{
+color:#a0a2a2;
+}
+/* ------------第二个--------- */
+.da-2-you >div:nth-child(2){
+width: 95%;
+height: 100%;
+/* background-color: white; */
+/* margin-top: 2%; */
+margin-left: 2%;
+}
+.da-2-you-img{
+width: 20%;
+height: 15vh;
+/* background-color: rebeccapurple; */
+float: left;
+margin-top: 3.5%;
+}
+.da-2-you-img img{
+width: 100%;
+height: 100%;
+/* border-radius: 7px; */
+/* box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.327); */
+}
+.da-2-you-zhi{
+width: 68%;
+height: 15vh;
+/* background-color: red; */
+color: #a0a2a2;
+margin-left: 2%;
+margin-top: 3.5%;
+float: left;
+}
+.da-2-you-zhi p:hover{
+color:#1da1f2;
+}
+.da-2-you-zhi p{
+margin-top: 1%;
+font-size: 18px;
+color:#cbcccc;
+}
+.da-2-you-zhi a{
+color: #a0a2a2;
+text-decoration: none;
+}
+.da-2-you-zhi a:hover{
+color: #1da1f2;
+text-decoration: none;
+}
+.hr{
+width: 92%;
+height: 0px;
+border: 1px #676969  dashed;
+/* background-color: red; */
+position: relative;
+top: 2%;
+}
+/* ------------da2结束--------- */
+
+/* -------------下面是da3---------- */
+
+.da-3{
+    width: 100%;
+    height: 100vh;
+    background: #272929;
+    display: flex;
+    }
+    
+   
+    /* ------------da3结束--------- */
+    
+
+}/* ------------下面是1330px---------- */
+
+@media screen and (min-width:768px) and (max-width:1329px){
+
+    /*------------------下面是轮播图-----------------*/
+            /* .da{
+                width: 100%;
+                height: 100vh;
+                z-index: 1000;
+                background-color: red;
+                position: fixed;
+                top: 0px;
+            } */
+            #lunbotubuju{
+                width: 100%;
+                height: 100vh;
+                /* background-color: red; */
+            }
+            #lunbotubuju img{
+                width: 100%;
+                height: 100%;
+            }
+    /*------------------下面是头部-----------------*/
+    header{
+        width: 100%;
+        height: 80px;
+        /* background-color: rgba(5, 5, 5, 0.246); */
+        z-index: 999;
+        display: flex;
+        position: fixed;
+        top: 0px;
+    }
+    /* -------------下面是logo---------- */
+    .logo{
+        width: 15%;
+        height: 80px;
+        margin-left: 5%;
+        /* background-color: red; */
+        background-image: url("../images/xing/logozhi.png");
+        background-repeat: no-repeat;
+        background-size: 90% 60%;
+        background-position: 80%;
+    }
+    header:hover{
+        /* background-color: red; */
+    }
+    /* -------------下面是logo字---------- */
+    .logozhi{
+        display: none;
+        width: 100%;
+        height: 100vh;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+    }
+  .logo-zhixiao{
+    display: none;
+    width: 40%;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0.326);
+    border-radius: 20px;
+    margin-top: 5%;
+  }
+    /* -------------下面是搜索框---------- */
+    .ssl{
+        width: 30%;
+        height: 80px;
+        /* background-color:white; */
+        margin-left:15%;
+        display: flex;
+    }
+    /* -------------下面是导航栏---------- */
+    nav{
+        width: 35%;
+        height: 80px;
+        /* background-color:blueviolet; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 42%;
+    }
+    nav a{
+        width: 30%;
+        margin-left: 3%;
+        height: 40px;
+        float: left;
+        text-decoration: none;
+        line-height: 40px;
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        /* background-color: blue; */
+        border-radius: 20px;
+        border: 0px;
+        /* font-family:"Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"; */
+    }
+    nav a:hover{
+        background-color: #1da1f2;
+    }
+    /* -------------下面是da-2---------- */
+    .da-2{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* background-image: url("../images/ssy/beijing.jpg"); */
+    }
+    .da-2-burl{
+    width: 100%;
+    height: 100vh;
+    /* background: rgba(255, 255, 255, 0.322); */
+    backdrop-filter: blur(3px);
+    }
+    .da-2-xw1{
+    width: 100%;
+    height: 12vh;
+    background: #212222;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    box-shadow: 1px 1px 5px 2px   #343636;
+    }
+    .da-2-xw1 a{
+    width: 8%;
+    height: 12vh;
+    line-height: 12vh;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 2%;
+    color: #676969;
+    }
+    .da-2-xw1 a:hover{
+    color: #a0a2a2;
+    border-bottom: 3px #1da1f2 solid;
+    }
+    /* -------------下面是---------- */
+    
+    .da-2-xw2{
+    width: 100%;
+    height: 88vh;
+    background: #272929;
+    display: flex;
+    }
+    
+    .da-2-xw2 >div:nth-child(1){
+    width: 35%;
+    height: 100%;
+    
+    /* background-color: red;; */
+    }
+    .da-2-xw2 >div:nth-child(2){
+    width: 65%;
+    height: 100%;
+    /* background-color: rgb(2, 53, 255);; */
+    }
+    
+    /* -------------下面是左边的介绍小吴---------- */
+    .da-2-zhuo{
+    width: 60%;
+    height: 80%;
+    background-color: #414444;
+    /*box-shadow: 1px 1px     5px 2px   #343636;*/
+    /* border: 1px #565657 solid; */
+    /* border-radius: 1%; */
+    position: relative;
+    left: 30%;
+    top: 8%;
+    }
+    /* ------------第一个--------- */
+    .da-2-zhuo >div:nth-child(1){
+    width: 100%;
+    height: 49px;
+    line-height: 50px;
+    border-bottom: 1px  #565657 solid;
+    }
+    .da-2-zhuo >div:nth-child(1) a{
+    text-decoration: none;
+    float: left;
+    width: 30%;
+    color: #676969;
+    text-align: center;
+    height: 100%;
+    }
+    .da-2-zhuo >div:nth-child(1) a:hover{
+    color:#a0a2a2;
+    }
+    /* ------------第二个--------- */
+    .da-2-zhuo >div:nth-child(2){
+    width: 100%;
+    height: 35%;
+    /*border-bottom: 1px #565657 solid;*/
+    background-image: url("../images/logo.png");
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    }
+    
+    /* ------------第三个--------- */
+    .da-2-zhuo >div:nth-child(3){
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    color: #a0a2a2; 
+    }
+    /* .da-2-zhuo >div:nth-child(3):hover{
+        color:#1da1f2;
+    } */
+    /* -------------下面是右边的---------- */
+    .da-2-you{
+    width: 85%;
+    height: 100%;
+    background-color: #414444;
+    /*box-shadow: 1px 1px 5px 2px   #343636;*/
+    position: relative;
+    /* left: 30%; */
+    top: 8%;
+    }
+    /* ------------第一个--------- */
+    .da-2-you >div:nth-child(1){
+    width: 100%;
+    height: 49px;
+    line-height: 50px;
+    border-bottom: 1px  #565657 solid;
+    }
+    .da-2-you >div:nth-child(1) a{
+    text-decoration: none;
+    float: left;
+    width: 13%;
+    color: #676969;
+    text-align: center;
+    height: 100%;
+    }
+    .da-2-you >div:nth-child(1) a:hover{
+    color:#a0a2a2;
+    }
+    /* ------------第二个--------- */
+    .da-2-you >div:nth-child(2){
+    width: 95%;
+    height: 100%;
+    /* background-color: white; */
+    /* margin-top: 2%; */
+    margin-left: 2%;
+    }
+    .da-2-you-img{
+    width: 20%;
+    height: 15vh;
+    /* background-color: rebeccapurple; */
+    float: left;
+    margin-top: 3.5%;
+    }
+    .da-2-you-img img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 7px; */
+    /* box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.327); */
+    }
+    .da-2-you-zhi{
+    width: 68%;
+    height: 15vh;
+    /* background-color: red; */
+    color: #a0a2a2;
+    margin-left: 2%;
+    margin-top: 3.5%;
+    float: left;
+    }
+    .da-2-you-zhi p:hover{
+    color:#1da1f2;
+    }
+    .da-2-you-zhi p{
+    margin-top: 1%;
+    font-size: 18px;
+    color:#cbcccc;
+    }
+    .da-2-you-zhi a{
+    color: #a0a2a2;
+    text-decoration: none;
+    }
+    .da-2-you-zhi a:hover{
+    color: #1da1f2;
+    text-decoration: none;
+    }
+    .hr{
+    width: 92%;
+    height: 0px;
+    border: 1px #676969  dashed;
+    /* background-color: red; */
+    position: relative;
+    top: 2%;
+    }
+    /* ------------da2结束--------- */
+    
+    
+    }/* ------------下面是1330px---------- */
+@media screen and (min-width:480px) and (max-width:767px){
+body>*{
+/* background: red; */
+}
+/*------------------下面是侧边栏-----------------*/
+.cebianbuju{
+    width: 50px;
+    height: 50px;
+    /* background-color: yellow; */
+    z-index: 999;
+    position: fixed;
+    top: 2.2%;
+    left: 82%;
+}
+.cebianbuju >div{
+    width: 100%;
+    height: 12px;
+    background-color: black;
+    margin-top: 2px;
+    border-radius: 3px;
+
+}
+
+
+/*------------------下面是轮播图-----------------*/
+        /* .da{
+            width: 100%;
+            height: 100vh;
+            z-index: 1000;
+            background-color: red;
+            position: fixed;
+            top: 0px;
+        } */
+        #lunbotubuju{
+            width: 100%;
+            height: 300px;
+            /* background-color: red; */
+        }
+        #lunbotubuju img{
+            width: 100%;
+            height: 100%;
+        }
+/*------------------下面是头部-----------------*/
+header{
+    width: 100%;
+    height: 80px;
+    /* background-color: rgba(139, 101, 101, 0.171); */
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    top: 0px;
+}
+/* -------------下面是logo---------- */
+.logo{
+    width: 30%;
+    height: 80px;
+    margin-left: 5%;
+    /* background-color: red; */
+    background-image: url("../images/xing/logozhi.png");
+    background-repeat: no-repeat;
+    background-size: 90% 60%;
+    background-position: 80%;
+}
+header:hover{
+    /* background-color: red; */
+}
+/* -------------下面是logo字---------- */
+.logozhi{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.logo-zhixiao{
+    display: none;
+    width: 40%;
+    height: 40%;
+    /* z-index: 1000; */
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    border-radius:10px;
+    background-color: rgba(255, 255, 255, 0.315); 
+    /*background-image: url("../images/xing/logozhi.png");*/
+    background-repeat: no-repeat;
+    background-size: 65% 45%;
+    background-position: 50%;
+    color: white;
+    /* font-family: "仿宋体"; */
+    
+}
+/* .logo-zhixiao >div:nth-child(1){
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 70% 65%;
+    background-position: 50%;
+}
+.logo-zhixiao >div:nth-child(2){
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+} */
+/* -------------下面是搜索框---------- */
+.ssl{
+    width: 30%;
+    height: 80px;
+    /* background-color:white; */
+    margin-left:15%;
+    display: flex;
+}
+/* -------------下面是导航栏---------- */
+nav{
+    display: none;
+    width: 35%;
+    height: 80px;
+    /* background-color:blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 42%;
+}
+nav a{
+    display: none;
+    width: 30%;
+    margin-left: 3%;
+    height: 40px;
+    float: left;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    /* background-color: blue; */
+    border-radius: 20px;
+    border: 0px;
+    /* font-family:"Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"; */
+}
+nav a:hover{
+    background-color: #1da1f2;
+}
+
+}/* ------------下面是480px---------- */
+
+@media screen and (min-width:100px) and (max-width:479px){
+    body>*{
+    /* background: red; */
+    }
+    /*------------------下面是侧边栏-----------------*/
+    .cebianbuju{
+        width: 50px;
+        height: 50px;
+        /* background-color: yellow; */
+        z-index: 999;
+        position: fixed;
+        top: 2.2%;
+        left: 82%;
+    }
+    .cebianbuju >div{
+        width: 100%;
+        height: 12px;
+        background-color: black;
+        margin-top: 2px;
+        border-radius: 3px;
+    
+    }
+    
+    
+    /*------------------下面是轮播图-----------------*/
+            /* .da{
+                width: 100%;
+                height: 100vh;
+                z-index: 1000;
+                background-color: red;
+                position: fixed;
+                top: 0px;
+            } */
+            #lunbotubuju{
+                width: 100%;
+                height: 300px;
+                /* background-color: red; */
+            }
+            #lunbotubuju img{
+                width: 100%;
+                height: 100%;
+            }
+    /*------------------下面是头部-----------------*/
+    header{
+        width: 100%;
+        height: 80px;
+        /* background-color: rgba(139, 101, 101, 0.171); */
+        z-index: 999;
+        display: flex;
+        position: fixed;
+        top: 0px;
+    }
+    /* -------------下面是logo---------- */
+    .logo{
+        width: 30%;
+        height: 80px;
+        margin-left: 5%;
+        /* background-color: red; */
+        background-image: url("../images/xing/logozhi.png");
+        background-repeat: no-repeat;
+        background-size: 90% 60%;
+        background-position: 80%;
+    }
+    header:hover{
+        /* background-color: red; */
+    }
+    /* -------------下面是logo字---------- */
+    .logozhi{
+        width: 100%;
+        height: 100vh;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+    }
+    .logo-zhixiao{
+        display: none;
+        width: 40%;
+        height: 40%;
+        /* z-index: 1000; */
+        /* display: flex; */
+        /* justify-content: center; */
+        align-items: center;
+        border-radius:10px;
+        background-color: rgba(255, 255, 255, 0.315); 
+        /*background-image: url("../images/xing/logozhi.png");*/
+        background-repeat: no-repeat;
+        background-size: 65% 45%;
+        background-position: 50%;
+        color: white;
+        /* font-family: "仿宋体"; */
+        
+    }
+    /* .logo-zhixiao >div:nth-child(1){
+        width: 50%;
+        height: 100%;
+        background-color: red;
+        background-image: url("../images/logo.png");
+        background-repeat: no-repeat;
+        background-size: 70% 65%;
+        background-position: 50%;
+    }
+    .logo-zhixiao >div:nth-child(2){
+        width: 50%;
+        height: 100%;
+        background-color: blue;
+    } */
+    /* -------------下面是搜索框---------- */
+    .ssl{
+        width: 30%;
+        height: 80px;
+        /* background-color:white; */
+        margin-left:15%;
+        display: flex;
+    }
+    /* -------------下面是导航栏---------- */
+    nav{
+        display: none;
+        width: 35%;
+        height: 80px;
+        /* background-color:blueviolet; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 42%;
+    }
+    nav a{
+        display: none;
+        width: 30%;
+        margin-left: 3%;
+        height: 40px;
+        float: left;
+        text-decoration: none;
+        line-height: 40px;
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        /* background-color: blue; */
+        border-radius: 20px;
+        border: 0px;
+        /* font-family:"Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"; */
+    }
+    nav a:hover{
+        background-color: #1da1f2;
+    }
+    
+    }/* ------------下面是480px---------- */
+    
+    
