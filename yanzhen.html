@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>测试验证</title>
+	<script src="../jquery教学例子/jquery-3.4.1/package/dist/jquery.js"></script>
+	
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.img{
+			position: absolute;
+			top: 2px;
+/*			left: 190px;*/
+		}
+		.mask{
+			width: 40px;
+			height: 40px;
+			border: 2px red solid;
+		}
+		.slider-btn{
+			width: 40px;
+			height: 40px;
+			background-color: red;
+			z-index: 999;
+			position: relative;
+			top: 0px;
+			cursor: pointer;
+			text-align: center;
+			line-height: 40px;
+			color: white;
+		}
+		.buju{
+			width: 100%;
+			height: 100vh;
+			/* background-color: blue; */
+			box-shadow: 1px 1px 4px rgba(88, 85, 85, 0.532);
+		}
+		.weizhi{
+            position: absolute;
+			top: 35%;
+			left: 40%;
+		}
+
+		.biaodan{
+			width: 100%;
+			height: 100vh;
+			/* display: none; */
+			/* background-color: red; */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.wei{
+			/* position: relative;
+			top: 45%;
+			left: 40%; */
+			width: 50%;
+			height: 50%;
+			/* background-color: red; */
+		}
+	    input{
+			width: 48%;
+			height: 40px;
+			margin-top: 2%;
+			margin-left: 20%;
+			text-indent: 5%;
+		}
+		input[type=text]:focus{
+			outline: none;
+		}
+		.anniu1{
+			width: 30%;
+			border: 0px;
+			color: white;
+			font-size: 20px;
+			margin-left: 30%;
+			background-color: rgb(0, 157, 255);
+			border-radius: 10px;
+		}
+		.anniu1:hover{
+			background-color: red;
+		}
+		.anniu2{
+			width: 30%;
+			border: 0px;
+			color: white;
+			font-size: 20px;
+			margin-left: 30%;
+			background-color: rgb(0, 157, 255);
+			border-radius: 10px;
+			float: left;
+		}
+		.anniu2:hover{
+			/* background:; */
+			background-color: rgb(0, 140, 255);
+		}
+	</style>
+</head>
+<body>
+
+	<!-- ================ -->
+ <div class="buju" style="display: block;">
+ <div class="weizhi">
+	<div>
+	<div class="">
+	<img src="image/big.jpg">
+    </div>
+	<div class="img">
+	<img src="image/small.png">
+	</div>
+	</div>
+	
+	<div style="width: 320px; height: 44px; border: 1px #A7A2A2 solid;">
+	   <div class="mask">
+		 <div class="slider-btn">
+		  &#8594;
+		 </div>
+	   </div>
+	</div>
+</div>
+</div>
+	<!-- ================ -->
+		<div class="biaodan">
+		<div class="wei">
+		<form action="#" method="get" onsubmit="return ceshi()">
+		  <input type="text" name="" id="user" placeholder="user" required><br>
+		  <input type="password" name=""  id="pwd" value="" required><br>
+		    <!-- <input type="button" class="anniu1" value="注册"> -->
+			<input type="submit" value="登录" class="anniu2" placeholder="password" >
+		</form>
+	   </div>
+	</div>
+
+         <script>
+//	function ceshi(){
+//		var biaodan = document.getElementsByClassName("wei")[0];
+//		var buju = document.getElementsByClassName("buju")[0];
+//		buju.style.display="block";
+//		biaodan.style.display="none";
+//		return false;
+//	}
+//
+//
+//
+////=========按下的时候==========
+//(function($){
+//	$(".slider-btn").on('mousedown touchstart',function(e){
+//		e = e ||window.event;
+//		moveStart = e.pageX || e.originalEvent.targetTouches[0].pageX;
+//	});
+//	$(window).on('mousemove touchmove',function(e){
+//		e = e||window.event;
+//		var ceshiX = e.pageX || e.originalEvent.targetTouches[0].pageX;
+//		var d = ceshiX - moveStart ;
+//		 if(moveStart == ''){
+//
+//		 }else{
+//			if(d < 0 || d > (280)){
+//
+//			}else{
+//				$(".slider-btn").css({
+//					"left": d +'px',
+//					"transition":"inherit"
+//				});
+//				$(".img").css({
+//					"left": d +'px',
+//					"transition":"inherit"
+//				});
+//				 
+//                 $(".mask").width(d+40);
+//			}
+//		 }
+//	});
+//	$(window).on('mouseup touchend',function(e){
+//		e = e ||window.event;
+//		var ceshishong = e.pageX - moveStart
+//		if(ceshishong > 180 && ceshishong < 190){
+//        var biaodan = document.getElementsByClassName("wei")[0];
+//		var buju = document.getElementsByClassName("buju")[0];
+//		buju.style.display="none";
+//		biaodan.style.display="block";
+//		var pwd = document.getElementById("pwd").value;
+//		var shuzhi = /\d+/;
+//		var zhimu = /[a-zA-Z]+/;
+//			if(pwd.length<6){
+//				alert("密码不能小于6位");
+//				return false;
+//			}
+//			if(shuzhi.test(pwd) && zhimu.test(pwd)){
+//				alert("登录成功");
+//				return false;
+//			}
+//			else{
+//				alert("不可以是纯数字和纯字母");
+//				return false;
+//			}
+//			moveStart = '';
+//		}
+//
+//	});	
+//	
+//})(jQuery)
+//	
+//	
+function ceshi(){
+	var buju = document.getElementsByClassName("buju")[0];
+	var wei = document.getElementsByClassName("wei")[0];
+	buju.style.display="block";
+	wei.style.display="none";
+	return false;
+}
+
+
+(function(e){
+	$(".slider-btn").on('mousedown touchstart',function(e){
+		e = e||window.event;
+		moveStart = e.pageX || e.originalEvent.targetTouches[0].pageX;
+	});
+	$(window).on('mousemove touchmove',function(e){
+		e = e||window.event;
+		var ceshiX = e.pageX || e.originalEvent.targetTouches[0].pageX;
+		var d = ceshiX - moveStart ;
+		 if(moveStart == ''){
+			 
+		 }else{
+			 if(d < 0 || d > (280)){
+				 
+			 }else{
+				 $(".slider-btn").css({
+					 "left":d+'px',
+					 "transition":"inberit"
+				 });	 
+				 $(".img").css({
+					 "left":d+'px',
+					 "transition":"inberit"
+				 });
+				 $(".mask").width(d+40);
+			 }
+		 }
+	});//=====mousemove
+	
+	$(window).on('mouseup touchend',function(e){
+		e = e ||window.event;
+		var shong = e.pageX - moveStart 
+		 if(shong > 180 && shong < 190){
+			var pwd = document.getElementById("pwd").value;
+	var buju = document.getElementsByClassName("buju")[0];
+	var wei = document.getElementsByClassName("wei")[0];
+	buju.style.display="none";
+	wei.style.display="block";
+	
+	var shuzhi = /\d+/;
+	var zhimu = /[a-zA-Z]+/;
+			 
+			 if(pwd.length<6){
+				 alert("不能小于6位数");
+				 return false;
+			 }
+			 if(shuzhi.test(pwd) && zhimu.test(pwd)){
+				 alert("成功");
+				 return false;
+			 }
+			 else{
+				  alert("不能是纯数字和纯字母");
+				 return false;
+			 }
+		 }moveStart = ''
+	});//=====mouseup
+})(jQuery)
+
+	</script>
+<!--<script type="text/javascript" src="yanzhen.js"></script>-->
+</body>
+</html>
